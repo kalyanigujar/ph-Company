@@ -1,0 +1,52 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+p {
+  text-align: justify;
+}
+
+/* Buttons */
+#btn-book,
+#btn-gift {
+  border: 2px solid #9a883e;
+  padding: 10px 20px;
+  font-weight: 600;
+  color: #9a883e;
+  background-color: transparent;
+  transition: 0.3s ease;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#btn-book:hover,
+#btn-gift:hover {
+  background: #9a883e;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Headings */
+#section-heading {
+  color: #9a883e;
+  font-weight: 300;
+}
+
+#sub-heading-services,
+#sub-heading-reviews,
+#sub-heading-gallery {
+  color: #9a883e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

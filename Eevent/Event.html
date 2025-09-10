@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Event.css">
+</head>
+<body>
+
+  <!-- Search Bar -->
+  <div id="searchContainer-fluid">
+    <div id="searchGroup">
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Search events">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+        <input type="text" class="form-control" placeholder="Location">
+      </div>
+
+      <div class="input-group" style="max-width: 200px;">
+        <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+        <input type="date" class="form-control">
+      </div>
+
+      <button id="searchButton">Search</button>
+    </div>
+  </div>
+
+  <!-- Events Grid -->
+  <div class="container py-4">
+    <div class="row g-4">
+
+      <!-- Event Cards -->
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/phialab.jpg" alt="Podcast - What One Thing">
+          <div class="event-card-body">
+            <h6>Podcast - What One Thing</h6>
+            <p><i class="bi bi-calendar3"></i> April 19, 2023</p>
+            <p><i class="bi bi-clock"></i> 10:00 am</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Denver, Colorado</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/2.png" alt="Live Love Spa Glow Spotlight">
+          <div class="event-card-body">
+            <h6>Live.Love.Spa, Glow Spotlight</h6>
+            <p><i class="bi bi-calendar3"></i> June 5 - June 6, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Denver, Colorado</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/a.png" alt="Smart Meetings">
+          <div class="event-card-body">
+            <h6>Smart Women, New York - Keynote Speaker</h6>
+            <p><i class="bi bi-calendar3"></i> Aug 2 - Aug 4, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">New York Marriott Marquis</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/4.png" alt="Live Love Spa Glow Spotlight">
+          <div class="event-card-body">
+            <h6>LIVE.LOVE.SPA, Glow Spotlight</h6>
+            <p><i class="bi bi-calendar3"></i> Aug 21 - Aug 22, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Scottsdale, Arizona</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/5.png" alt="Colorado School of Mines">
+          <div class="event-card-body">
+            <h6>2023 Chevron Lecture & Luncheon</h6>
+            <p><i class="bi bi-calendar3"></i> October 11, 2023</p>
+            <p><i class="bi bi-clock"></i> 11:30 am - 2:00 pm</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Colorado School of Mines</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/6.jpg" alt="Beauty World Osaka">
+          <div class="event-card-body">
+            <h6>Beauty World Osaka</h6>
+            <p><i class="bi bi-calendar3"></i> Oct 16 - Oct 18, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Osaka, Japan</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="images/7.png" alt="Synergy Retreat Show">
+          <div class="event-card-body">
+            <h6>Synergy - The Retreat Show</h6>
+            <p><i class="bi bi-calendar3"></i> Oct 24 - Oct 27, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Riviera Maya, Mexico</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="event-card">
+          <img src="C:\Axiom\Eevent\images\4.png" alt="Live Love Spa Glow Spotlight">
+          <div class="event-card-body">
+            <h6>LIVE.LOVE.SPA - Glow Spotlight</h6>
+            <p><i class="bi bi-calendar3"></i> Dec 4 - Dec 5, 2023</p>
+            <p><i class="bi bi-clock"></i> All Day</p>
+            <p><i class="bi bi-geo-alt"></i> <a href="#">Westin, Maui</a></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
