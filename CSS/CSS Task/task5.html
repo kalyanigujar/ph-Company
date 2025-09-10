@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ID Card</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e0e0e0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .id-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .front {
+  background: linear-gradient(to top, #012d4e 50%, #009688 50%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+
+
+  .front .company-name {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .front .slogan {
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  .photo-container {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px auto;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+  }
+
+  .photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .details {
+    font-size: 13px;
+    text-align: left;
+    line-height: 1.5;
+    padding: 0 15px;
+  }
+
+  .details div {
+    margin-bottom: 5px;
+  }
+
+  .details span {
+    display: inline-block;
+    width: 90px;
+    font-weight: 600;
+    margin-left: 40px;
+    text-align: center;
+  }
+/*
+  .back {
+    background: white;
+    color: #005b9f;
+    padding: 20px;
+  }
+
+  .back p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .qr-code {
+    width: 90px;
+    height: 90px;
+    background: #005b9f;
+    margin: 0 auto 20px auto;
+    clip-path: polygon(
+      0% 0%, 80% 0%, 80% 80%, 0% 80%
+    );
+  }
+
+  .qr-code::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(90deg, transparent 50%, white 50%) 0 0 / 10px 10px repeat,
+      linear-gradient(transparent 50%, white 50%) 0 0 / 10px 10px repeat;
+  }
+
+  .back .company-name {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .back .slogan {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Front Side of ID Card -->
+  <div class="id-card front"> 
+    <div class="company-name">COMPANY NAME</div>
+    <div class="slogan">kayani gujar</div>
+    <div class="photo-container">
+      <img src="https://via.placeholder.com/110" alt="Profile Photo" />
+    </div>
+    <div class="name">Kayani Gujar</div>
+    <div class="title">Graphic Designer</div>
+    <div class="details">
+      <div><span>Code:</span> +12455678</div>
+      <div><span>Blood:</span> A+</div>   
+      <div><span>DOB:</span> 11-10-2002</div> 
+      <div><span>Join:</span> 21-8-2021</div>
+      <div><span>Expire:</span> 8-10-2022</div>
+      <div><span>Phone:</span> +8765424567</div>
+      <div><span>E-mail:</span> kayani@06gmail.com</div>
+      <div><span>Course:</span> BIR</div>
+      <div><span>Weight:</span> 70kg</div>
+    </div>
+  </div>
+
+  <!-- Back Side of ID Card -->
+  <div class="id-card back">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laoreet dolor magna aliquam erat volutpat. Ut wisi.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> 
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p> 
+    <div class="qr-code"></div>
+    <div class="company-name">COMPANY NAME</div>
+    <div class="slogan">kayani gujar</div>
+  </div>
+
+</body>
+</html>
+-------------------------------------------------------------
+.back {
+  background: linear-gradient(to top, #012d4e 60%, #d1f0f0 40%);
+  color: #005b9f;
+  padding: 20px;
+}
+
+
+  .back p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .qr-code {
+    width: 90px;
+    height: 90px;
+    background: #005b9f;
+    margin: 0 auto 20px auto;
+    clip-path: polygon(
+      0% 0%, 80% 0%, 80% 80%, 0% 80%
+    );
+  }
+
+   
+  .qr-code::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(90deg, transparent 50%, white 50%) 0 0 / 10px 10px repeat,
+      linear-gradient(transparent 50%, white 50%) 0 0 / 10px 10px repeat;
+  }
+
+  .back .company-name {
+    color: #f7f9fa;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .back .slogan {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+  }

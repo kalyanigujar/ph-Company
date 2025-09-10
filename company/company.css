@@ -1,0 +1,91 @@
+/* General Body Styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* Headings */
+#main-heading {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 50px;
+  color: #9a883e;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+#sub-heading-company,
+#sub-heading-science,
+#sub-heading-sparkle,
+#sub-heading-giving {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #9a883e;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Paragraphs */
+#p-company-1,
+#p-company-2,
+#p-science-1,
+#p-science-2,
+#p-sparkle-1,
+#p-sparkle-2,
+#p-sparkle-3,
+#p-giving-quote,
+#p-giving-1,
+#p-bio-1,
+#p-bio-2,
+#p-bio-3,
+#p-bio-4 {
+  text-align: justify;
+  font-size: 17px;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Images */
+#img-company,
+#img-science,
+#img-giving,
+#img-bio {
+  border-radius: 0px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+#img-science,
+#img-bio {
+  max-height: 600px;
+  object-fit: cover;
+}
+
+/* Donate Button */
+#btn-donate {
+  border: 2px solid #9a883e;
+  color: #9a883e;
+  background: transparent;
+  padding: 10px 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#btn-donate:hover {
+  background: #9a883e;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

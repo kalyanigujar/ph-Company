@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title> Image Grid </title>
+    <style>
+        body {
+            background-color: rgb(10, 10, 10);
+        }
+
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+
+        .general {
+            width: 100%;
+            height: 100%;
+        }
+
+        .item1 {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .item2 {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .item3 {
+            grid-column: 3 / span 1;
+            grid-row: 1 / span 2;
+        }
+
+        .item4 {
+            grid-column: 4 / span 1;
+            grid-row: 1 / span 1;
+        }
+
+        .item5 {
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 1;
+        }
+
+        .item6 {
+            grid-column: 4 / span 1;
+            grid-row: 2 / span 2;
+        }
+
+        .item7 {
+            grid-column: 1 / span 2;
+            grid-row: 3 / span 2;
+        }
+
+        .item8 {
+            grid-column: 3 / span 1;
+            grid-row: 3 / span 1;
+        }
+
+        .item9 {
+            grid-column: 3 / span 2;
+            grid-row: 4 / span 1;
+        }
+
+        @supports(min-width: 825px) {
+            .parent {
+                margin: 20px 450px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <img class="general item1" src="C:\Axiom\CSS\image gallary\Couple sunset.jpg" />
+        <img class="general item2" src="C:\Axiom\CSS\image gallary\Castle night.jpg" />
+        <img class="general item3" src="C:\Axiom\CSS\image gallary\Frozen forest moon.jpg" />
+        <img class="general item4" src="C:\Axiom\CSS\image gallary\Heart forest.jpg" />
+        <img class="general item5" src="C:\Axiom\CSS\image gallary\Moonlit river.jpg" />
+        <img class="general item6" src="C:\Axiom\CSS\image gallary\Red poppies.jpg" />
+        <img class="general item7" src="C:\Axiom\CSS\image gallary\Red sun ocean.jpg" />
+        <img class="general item8" src="C:\Axiom\CSS\image gallary\Sunset canyon.jpg" />
+        <img class="general item9" src="C:\Axiom\CSS\image gallary\brige.jpg" />
+    </div>
+    </body>
+</html>

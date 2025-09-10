@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 4;
+            padding: 4;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0fa38f;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            width: 700px;
+            height: 500px;
+            background-color: #dad3d3;
+            border-radius: 40px;
+            display: flex;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Left side - form */
+        .login-left {
+            width: 50%;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-left .emoji {
+            font-size: 36px;
+            margin-bottom: 5px;
+
+        }
+
+        .login-left h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #111;
+            margin-bottom: 5px;
+        }
+
+        .login-left p {
+            font-size: 14px;
+            color: #4d4c4c;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            
+        }
+
+        .input-group {
+            margin-bottom: 7px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 8px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .login-options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .login-options label {
+            display: flex;
+            align-items: center;
+        }
+
+        .login-options input[type="checkbox"] {
+            margin-right: 4px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #002bbb;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+
+            cursor: pointer;
+
+        }
+
+        .login-btn:hover {
+            background-color: #0f30d8;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 20px 5px;
+            color: #4d4b4b;
+            font-size: 15px;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-login img {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+
+        }
+
+        .social-login img:hover {
+            transform: scale(1.1);
+        }
+
+        .login-right {
+            width: 50%;
+
+            background: url('file:///C:/Axiom/CSS/image%20gallary/from.jpg') center/cover no-repeat;
+            border-radius: 40px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <div class="login-left">
+
+            <h2 style=" text-align: center;">Welcome home</h2>
+            <p> Please enter your details.</p>
+
+            <div class="input-group">
+                <input type="fname" placeholder=" First name" />
+            </div>
+
+            <div class="input-group">
+                <input type="lname" placeholder=" Last name" />
+            </div>
+
+            <div class="input-group">
+                <input type="email" placeholder=" Email" />
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder=" Password" />
+            </div>
+
+            <div class="login-options">
+                <label><input type="checkbox" /> Remember for 30 days</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button class="login-btn">Login</button>
+
+            <div class="divider">or</div>
+
+            <div class="social-login">
+                <img src="https://img.icons8.com/ios-filled/50/mac-os.png" alt="Apple" />
+                <img src="https://img.icons8.com/ios-filled/50/google-logo.png" alt="Google" />
+                <img src="https://img.icons8.com/ios-filled/50/facebook-new.png" alt="Facebook" />
+            </div>
+        </div>
+
+        <div class="login-right"></div>
+    </div>
+
+</body>
+
+</html>

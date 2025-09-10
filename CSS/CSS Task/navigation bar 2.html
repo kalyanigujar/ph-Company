@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar with Click Dropdown</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+
+      font-family: sans-serif;
+      margin: 40px;
+      background-image: url("https://i.pinimg.com/1200x/7c/17/87/7c1787020d5c97ea23c9f2cf4627ca27.jpg");
+    }
+
+    .navbar {
+      background: #ada4dd;
+      color: #090220;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 20px;
+      border-radius: 12px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 25px;
+    }
+
+    .badge {
+      background: #000;
+      color: #fff;
+      border-radius: 1000px;
+      padding: 2px 6px;
+      font-size: 12px;
+      margin-left: 4px;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-button {
+      background: #e5e5e5;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 38px;
+      left: 0;
+      background: #fff;
+      color: #000;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 140px;
+      display: none;
+      flex-direction: column;
+      z-index: 100;
+    }
+
+    .dropdown-menu.show {
+      display: flex;
+    }
+
+    .dropdown-menu a {
+      padding: 10px 16px;
+      text-decoration: none;
+      color: #000;
+      font-size: 14px;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .search-icon,
+    .upgrade-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+     
+
+    .upgrade-button {
+      background: #000;
+      color: #fff;
+      border: none;
+      padding: 6px 10px; 
+      border-radius: 6px;
+      display: flex;
+      
+       
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+
+    <div class="nav-left">
+      <i class="fa-solid fa-face-smile logo" alt="logo"></i>
+      <span>Dashboard</span>
+      <span>Orders <span class="badge">2</span></span>
+      <span>Products</span>
+      <span>Customers</span>
+
+
+      <div class="dropdown">
+        <button class="dropdown-button" id="dropdownToggle">Settings ▼</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="#">General</a>
+          <a href="#">Store</a>
+          <a href="#">Privacy</a>
+          <a href="#">API</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="nav-right">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <i class="fa-solid fa-circle-half-stroke"></i>
+
+      <button class="upgrade-button" >
+        <svg class="upgrade-icon"></svg>
+        <i class="fa-solid fa-bolt"> </i>
+        <span>Upgrade</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('dropdownToggle');
+    const dropdown = document.getElementById('dropdownMenu');
+
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('show');
+    });
+
+
+  </script>
+
+</body>
+
+</html>

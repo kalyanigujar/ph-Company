@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Sidebar with Content</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+          
+          background-color: #000;
+
+          
+        }
+
+
+        nav {
+            position: fixed;
+            left: 1;
+            top: 1;
+            height: 100%;
+            width: 20%;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 24px;
+            overflow: auto;
+            border-right: 2px solid #444;
+        }
+
+        nav header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+        }
+
+
+        header span {
+            background: #000;
+            color: #fff;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+        }
+
+        nav form {
+            background: #333;
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        nav form input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        nav li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+
+        }
+
+        li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+
+        nav h4 {
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #aaa;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }  
+    </style>
+</head>
+<body>
+    <nav role="navigation" aria-label="Main navigation">
+        <header>
+            <span>figr</span> Identity
+        </header>
+
+        <form role="search">
+            <input type="text" placeholder="Search..." aria-label="Search" />
+        </form>
+        <ul>
+            <li><i class="fa-solid fa-house icon"></i>Home</li>
+            <li><i class="fa-solid fa-desktop icon"></i>Computer</li>
+            <li><i class="fa-solid fa-comment icon"></i>Chat</li>
+            <li><i class="fa-solid fa-calendar icon"></i>Schedule</li>
+            <li><i class="fa-solid fa-gear icon"></i>Settings</li>
+        </ul>
+        <h4>SUPPORT</h4>
+        <ul>
+            <li><i class="fa-solid fa-circle-question icon"></i>Help</li>
+            <li><i class="fa-solid fa-envelope icon"></i>Mail us</li>
+            <li><i class="fa-solid fa-phone icon"></i>Call us</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

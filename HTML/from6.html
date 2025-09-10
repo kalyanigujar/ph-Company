@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Application Form</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">APPLICATION FORM</h1>
+    <p style="text-align: center; ">
+        Thank you for your intrest in working with us. Please check below for available job apportunities that meet your
+        criteria and send your<br>
+        Application by filling out the Job Application Form.
+    </p>
+    <form>
+        <div style="text-align: center;">
+            <label for="fname">*Full Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required
+                style="width: 350px; height: 20px;"><br><br>
+            <label for="email" style="margin-left: 40px;">*Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required
+                style="width: 350px; height: 20px;"><br><br>
+            <label for="Age" style="margin-left: 40px;">*Age:</label>
+            <input type="number" id="Age" name="Age" placeholder="Enter your age" required
+                style="width: 350px; height: 20px;"><br><br>
+
+            <label for="which option describe your current role?" style="margin-right: 10px;">*Which option describes
+                your current role?</label>
+            <select id="current_role" name="current_role" style="width: 125px; height: 20px; margin-right: 444px;">
+                <option value="Student">Student</option>
+                <option value="Employed">Employed</option>
+                <option value="Unemployed">Unemployed</option>
+                <option value="Self-employed">Self-employed</option>
+            </select><br><br>
+
+            <label for="would you like to list references?" style="margin-right: 10px;">* would you like to list
+                references?</label>
+            <label for="yes" style="margin-right: 5px;">Yes</label> 
+            <input type="radio" id="yes" name="references" value="yes" style="margin-right: 460px;"><br>
+            <label for="no" style="margin-left: 5px;">No</label>
+            <input type="radio" id="no" name="references" value="no" style="margin-right: 218px;"><br>
+
+            <label for="Which position would you like to apply for?" style="margin-right: 10px;">Which position would
+                you like to applyfor?</label>
+            <select id="position" name="position" style="width: 125px; height: 20px; margin-right: 444px;">
+                <option value="Software Engineer">Select an option</option>
+            </select><br><br>
+
+
+            <label for="Which programming language do you know?" style="margin-right: 5px;">Which programming language
+                do you know?</label>
+            <input type="checkbox" id="Java" name="language" value="java" style="margin-right: 5px;">
+            <label for="Java" style="margin-right: 524px;">Java</label><br>
+            <input type="checkbox" id="python" name="language" value="python" style="margin-right: 5px;">
+            <label for="python" style="margin-right: 208px;">Python</label><br>
+            <input type="checkbox" id="JavaScript" name="language" valu="JavaScript" style="margin-right: 5px;">
+            <label for="JavaScript" style="margin-right: 186px;">JavaScript</label><br>
+            <input type="checkbox" id="C++" name="language" value="C" style="margin-right: 5px;">
+            <label for="C++" style="margin-right: 223px;">C++</label><br>
+            <input type="checkbox" id="Swift" name="language" value="Swift" style="margin-right: 5px;">
+            <label for="Swift" style="margin-right: 218px;">Swift</label><br>
+            <input type="checkbox" id="Ruby" name="language" value="Ruby" style="margin-right: 5px;">
+            <label for="Ruby" style="margin-right: 218px;">Ruby</label><br>
+            <input type="checkbox" id=".NET" name="language" value=".NET" style="margin-right: 5px;">
+            <label for=".NET" style="margin-right: 218px;">.NET</label><br><br>
+
+
+            <label for="Comments" style="margin-right: 40px;">Any Comments?</label>
+            <input type="textarea" id="Comments" name="Comments" placeholder="Enter your comments here" required
+             style="width: 400px; height: 40px;" style="margin-right: 50px;"><br><br>
+ 
+            <input style="margin-right: 200px;" type="submit">
+        </div>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+        body {
+            background-color: #f7f4f4;
+            font-family: Arial, sans-serif;
+        }
+         h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            background-color: #ec7575;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+     
+    <form>
+         <h1><b>Student Registration Form</b></h1>
+        <table>
+            <tr>
+                <td>Roll No.</td>
+                <td><input type="text" name="rollno" required></td>
+            </tr>
+            <tr>
+                <td>Student Name</td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name" required> -
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Father's Name</td>
+                <td><input type="text" name="fathername" required></td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td>
+                    <input type="text" name="dob" placeholder="dd-mm-yyyy" required>
+                    <!-- <i>(dd-mm-yyyy)</i> -->
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile No.</td>
+                <td>
+                    <input type="text" value="+91" disabled style="width: 50px;"> -
+                    <input type="text" name="mobile" required style="width: 200px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Email ID</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="3" placeholder="Enter your address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="form_date" required></td>
+                <tr>
+                <td>Upload File</td>
+                <td><input type="file" name="upload_file" required></td>
+            </tr>
+            </tr>
+            <!-- <tr>
+                <td>Upload File</td>
+                <td><input type="file" name="upload_file" required></td>
+            </tr> -->
+            <tr>
+                <td>File Type</td>
+                <td>
+                    <input type="radio" name="filetype" value="HTML" required> HTML<br>
+                    <input type="radio" name="filetype" value="CSS"> CSS<br>
+                    <input type="radio" name="filetype" value="JavaScript"> JavaScript<br>
+                    <input type="radio" name="filetype" value="Text"> Text
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    <input type="checkbox" name="qualification" value="10th"> 10th<br>
+                    <input type="checkbox" name="qualification" value="12th"> 12th<br>
+                    <input type="checkbox" name="qualification" value="Diploma"> Diploma<br>
+                    <input type="checkbox" name="qualification" value="BTech"> BTech
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+        <div class="login-link">
+            Already have an account? <a href="#">Log in</a>
+        </div>
+    </form>
+</body>
+</html>

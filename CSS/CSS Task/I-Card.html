@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ID Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0e0e0;
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .id-card {
+      width: 250px;
+      background: white;
+      border-radius: 15px;
+      border: 8px solid #f0f5f8;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      margin: 40px;
+
+    }
+
+
+    .front {
+      background: linear-gradient(to top, #012d4e 60%, #b1f0f0 40%);
+
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .front .company-name {
+      color: #012d4e;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .front .slogan {
+      font-weight: 400;
+      font-size: 10px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .photo-container {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 15px auto;
+      border-radius: 50%;
+      border: 5px solid white;
+      overflow: hidden;
+    }
+
+    .photo-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+
+    }
+
+    .title {
+      font-size: 12px;
+      font-weight: 250;
+      margin-bottom: 15px;
+    }
+
+    .details {
+      font-size: 13px;
+      text-align: left;
+      line-height: 1.4;
+      padding: 0 15px;
+    }
+
+    .details span {
+      display: inline-block;
+      width: 60px;
+      font-weight: 500;
+      margin-left: 40px;
+
+    }
+
+    .back {
+      background: linear-gradient(to bottom, #012d4e 60%, #d1f0f0 40%);
+      color: #005b9f;
+      padding: 10px;
+      height: 60vh;
+    }
+
+
+    .back p {
+      font-size: 10px;
+      line-height: 1.4;
+      margin-bottom: 15px;
+    }
+
+    .qr-code-contener img {
+      width: 70%;
+      height: 70%;
+      background-image: url("C:\Axiom\CSS\image gallary\qr.png");
+       
+       
+    }
+
+    .back .company-name {
+       color: #012d4e;
+      font-weight: 600 ;
+      font-size : 20px;
+      text-align : center;
+    }
+
+    .back .slogan {
+      font-weight: 500;
+      font-size: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="id-card front">
+    <div class="company-name">Axiom Techguru</div>
+    <div style="color: #033953;" class="slogan">Kayani Gujar</div>
+    <div class="photo-container">
+      <img src="C:\Axiom\CSS\image gallary\k.jpg" alt="Profile Photo" />
+    </div>
+    <div class="name"> Kayani gujar</div>
+    <div class="title">Graphic Designer</div>
+    <div class="details">
+      <div><span>Code : </span> +12455678</div>
+      <div><span>Blood : </span> A+</div>
+      <div><span>DOB : </span> 11-10-2002</div>
+      <div><span>Join : </span> 21-8-2021</div>
+      <div><span>Expire: </span> 8-10-2022</div>
+      <div><span>Phone : </span> +8765424567</div>
+      <div><span>E-mail:</span>kgmai.com</div>
+    </div>
+  </div>
+
+  <div class="id-card back">
+    <p style="color: darkgray;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut laoreet dolor magna
+      aliquam erat volutpat.Ut wisi.</p>
+    <p style="color: darkgray;"> Lorem ipsum dolor sit amet, consectrtuer adipiscing eit, sed diam nonummy nibh eiusmod
+      tincidunt utlaoreet dolor
+      magna aliquam erat volutpat.Ut wisi. </p>
+    <p style="color: darkgray;"> Lorem ipsum dolor sit amet, consectrtuer adipiscing eit, sed diam nonummy nibh eiusmod
+      tincidunt utlaoreet dolor
+      magna aliquam erat volutpat.Ut wisi. </p>
+    <div class="qr-code"></div>
+    <div class="photo-container">
+      <img src="C:\Axiom\CSS\image gallary\qr.png" alt="qr-code" />
+    </div>
+    <div  class="company-name">Axiom Techguru</div>
+    <div class="slogan">kayani Gujar</div>
+
+  </div>
+
+</body>
+
+</html>

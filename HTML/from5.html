@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    .checkbox-group,
+    .radio-group {
+      margin-bottom: 15px;
+    }
+    .checkbox-group label,
+    .radio-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #2b7cff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a5ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>APPLICATION FORM</h1>
+  <p style="text-align: center;">
+    Thank you for your interest in working with us. Please check below for available job opportunities that meet your criteria and send your application by filling out the Job Application Form.
+  </p>
+
+  <form>
+    <label for="fullname">* Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="email">* Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+
+    <label for="age">* Age:</label>
+    <input type="number" id="age" name="age" placeholder="Age" required>
+
+    <label for="role">Which option best describes your current role?</label>
+    <select id="role" name="role">
+      <option value="student" selected>Student</option>
+      <option value="intern">Intern</option>
+      <option value="entry">Entry-Level</option>
+      <option value="professional">Professional</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label>* Would you like to list references?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="references" value="yes" required> Yes</label>
+      <label><input type="radio" name="references" value="no"> No</label>
+    </div>
+
+    <label for="position">Which position would you like to apply for?</label>
+    <select id="position" name="position">
+      <option value="" disabled selected>Select an option</option>
+      <option value="developer">Software Developer</option>
+      <option value="designer">UI/UX Designer</option>
+      <option value="manager">Project Manager</option>
+      <!-- Add more options as needed -->
+    </select>
+
+    <label>Which programming languages do you know?</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="language" value="java"> Java</label>
+      <label><input type="checkbox" name="language" value="python"> Python</label>
+      <label><input type="checkbox" name="language" value="javascript"> JavaScript</label>
+      <label><input type="checkbox" name="language" value="cpp"> C++</label>
+      <label><input type="checkbox" name="language" value="swift"> Swift</label>
+      <label><input type="checkbox" name="language" value="ruby"> Ruby</label>
+      <label><input type="checkbox" name="language" value="dotnet"> .NET</label>
+    </div>
+
+    <label for="comments">Any Comments?</label>
+    <textarea id="comments" name="comments" rows="4" placeholder="Enter your comment here..."></textarea>
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+</body>
+</html>

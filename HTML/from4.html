@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #f7f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        form {
+            width: 40%;
+            margin: auto;
+            background-color: #f08686;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        .input-inline {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-inline input {
+            flex: 1;
+        }
+
+        input[type="submit"] {
+            display: block;
+            margin: 80px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 290px; 
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            padding-left: 10px;
+        }
+
+        .file-section {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1><b>Student Registration Form</b></h1>
+
+        <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname">
+        </div>
+
+        <div class="form-group">
+            <label>Roll No.</label>
+            <input type="text" name="rollno" required>
+        </div>
+
+        <div class="form-group">
+            <label>Father's Name</label>
+            <input type="text" name="fathername" required>
+        </div>
+
+        <div class="form-group">
+            <label>Date of Birth </label>
+            <input type="text" name="dob" placeholder="dd-mm-yyyy" required>
+        </div>
+
+        <div class="form-group">
+            <label>Mobile No.</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="text" value="+91" disabled style="width: 50px;">
+                <input type="text" name="mobile" placeholder="91" required>  
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email ID</label>
+            <input type="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <textarea name="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date" name="form_date" required>
+        </div>
+
+        <div class="form-group file-section">
+            <label>Upload File</label>
+            <input type="file" name="upload_file" required>
+        </div>
+
+        <div class="form-group">
+            <label>File Type</label>
+            <div class="radio-group">
+                <input type="radio" name="filetype" value="HTML" required> HTML<br>
+                <input type="radio" name="filetype" value="CSS"> CSS<br>
+                <input type="radio" name="filetype" value="JavaScript"> JavaScript<br>
+                <input type="radio" name="filetype" value="Text"> Text
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Qualification</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="qualification" value="10th"> 10th<br>
+                <input type="checkbox" name="qualification" value="12th"> 12th<br>
+                <input type="checkbox" name="qualification" value="Diploma"> Diploma<br>
+                <input type="checkbox" name="qualification" value="BTech"> BTech
+            </div>
+        </div>
+
+        <input type="submit" value="submit">
+
+        <div class="login-link">
+            Already have an account? <a href="#">Log in</a>
+        </div>
+        
+    </form>
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+<head>
+<head>
+
+  <title>Sign Up </title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      margin: 5;
+      background: linear-gradient(to right, #002d3d, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 800px;
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .left-panel {
+      width: 50%;
+      background: url('file:///C:/Axiom/CSS/image%20gallary/earth1.jpg') center/cover no-repeat;
+      padding: 20px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+
+    .right-panel {
+      width: 50%;
+      padding: 40px 30px;
+    }
+
+    .right-panel h2 {
+      font-size: 28px;
+      margin-bottom: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 14px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .checkbox-container {
+      margin: 10px 0 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+    }
+
+    .btn-primary {
+      background-color: #000;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background-color: #333;
+    }
+
+    .btn-google {
+      background-color: white;
+      color: #444;
+      border: 1px solid #ccc;
+    }
+
+    .btn-google:hover {
+      background-color: #f3f3f3;
+    }
+
+    .btn-apple {
+      background-color: #000;
+      color: white;
+    }
+
+    .btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .or-divider {
+      text-align: center;
+      margin: 14px  ;
+      color: #524f4f;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="left-panel">
+
+    </div>
+
+
+    <div class="right-panel">
+      <h2 style="text-align: center;">Sign Up</h2>
+      <form>
+        <input type="text" placeholder="First name" required />
+        <input type="text" placeholder="Last name" required />
+        <input type="email" placeholder="Email address" required />
+        <input type="password" placeholder="Password" required />
+
+        <div class="checkbox-container">
+          <label><input type="checkbox" required> Accept Terms & Conditions</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Join us → </button>
+
+        <div class="or-divider">or</div>
+
+
+        <button type="button" class="btn btn-google">
+<i class="fa-brands fa-google"></i>
+          Sign up with Google
+        </button>
+
+
+        <button type="button" class="btn btn-apple">
+          <i class="fa-brands fa-apple"></i>
+          Sign up with Apple
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
